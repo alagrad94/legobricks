@@ -1,3 +1,5 @@
 domBuilder.appendInputForm();
-let legoButton = document.querySelector(".lego__save");
-legoButton.addEventListener("click", eventListeners.handleFormSubmission);
+let legoSaveButton = document.querySelector(".lego__save");
+legoSaveButton.addEventListener("click", eventListeners.handleFormSubmission);
+// let legoDeleteButton = document.querySelector(".lego__delete");
+// legoDeleteButton.addEventListener("click", eventListeners.handleDeleteButton);

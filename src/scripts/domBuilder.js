@@ -1,5 +1,6 @@
 const domBuilder = {
     appendInputForm () {
+        let colors = ["Red", "Green", "Yellow", "Blue", "Orange", "Black"]
         let inputForm = `
         <article>
         <fieldset>
@@ -16,9 +17,17 @@ const domBuilder = {
         </fieldset>
         <fieldset>
         <label for="lego__color">Color:</label>
-        <input id="lego__color" name="lego__color" type="text" autofocus />
+        <select id="lego__color">
+        <option value="${colors[0]}">${colors[0]}</option>
+        <option value="${colors[1]}">${colors[1]}</option>
+        <option value="${colors[2]}">${colors[2]}</option>
+        <option value="${colors[3]}">${colors[3]}</option>
+        <option value="${colors[4]}">${colors[4]}</option>
+        <option value="${colors[5]}">${colors[5]}</option>
+        </select>
         </fieldset>
         <button class="btn lego__save">Save Lego Creation</button>
+        <button class="btn lego__delete">Delete Lego</button>
         </article>`
 
         let dispalyContainer = document.querySelector("#display-container");

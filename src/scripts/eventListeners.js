@@ -13,5 +13,9 @@ const eventListeners = {
         }
 
         data.postLego(legoObject);
-    }
+    },
+
+    // handleDeleteButton () {
+
+    // }
 }
