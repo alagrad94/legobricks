@@ -9,12 +9,8 @@ const data = {
         })
     },
 
-    deleteLego (legoId) {
-        fetch(`http://localhost:8088/legos/${legoId}`, {
-        method: "DELETE",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        })
+    getColors () {
+        return fetch("http://localhost:8088/colors")
+           .then (response => response.json())
     }
 }
