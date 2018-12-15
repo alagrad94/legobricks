@@ -5,7 +5,7 @@ const domBuilder = {
         .then (parsedColors => {
             parsedColors.forEach(color => {
                 selectOptions += `<option value="${color.id}">${color.name}</option>`
-                console.log(selectOptions)
+                // console.log(selectOptions)
                 return selectOptions;
             })
             let inputForm = `
@@ -27,13 +27,15 @@ const domBuilder = {
         <select id="lego__color">${selectOptions}
         </select>
         </fieldset>
-        <button class="btn lego__save">Save Lego Creation</button>
+        <button class="btn lego__save" id="lego__save">Save Lego Creation</button>
         <button class="btn lego__delete">Delete Lego</button>
         </article>`
 
         let dispalyContainer = document.querySelector("#display-container");
         dispalyContainer.innerHTML = inputForm;
+        let legoSaveButton = document.getElementById("lego__save");
+        console.log(legoSaveButton)
+        legoSaveButton.addEventListener("click", eventListeners.handleFormSubmission);
         })
-
     }
 }

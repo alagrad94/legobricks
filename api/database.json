@@ -1,5 +1,20 @@
 {
-  "legos": [],
+  "legos": [
+    {
+      "Creator": "Russ",
+      "Nme": "Lego1",
+      "Shape": "round",
+      "Color": "1",
+      "id": 1
+    },
+    {
+      "Creator": "Russ",
+      "Nme": "Lego2",
+      "Shape": "Square",
+      "Color": "2",
+      "id": 2
+    }
+  ],
   "colors": [
     {
       "id": 1,
